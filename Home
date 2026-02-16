@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anvesha Global | Strategic Research Consultancy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --navy: #002D62;
+            --crimson: #B21F1F;
+            --gold: #D4AF37;
+            --soft-white: #F8FAFC;
+            --text-main: #1E293B;
+        }
+
+        * { box-sizing: border-box; scroll-behavior: smooth; }
+        body { font-family: 'Montserrat', sans-serif; margin: 0; color: var(--text-main); line-height: 1.6; background-color: #fff; }
+        h1, h2, h3, .brand-name { font-family: 'Playfair Display', serif; }
+
+        /* --- NAVIGATION --- */
+        nav {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 20px 8%; background: white; position: sticky; top: 0;
+            z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        .logo { font-size: 1.5rem; font-weight: 700; color: var(--navy); text-transform: uppercase; }
+        .nav-links a { text-decoration: none; color: var(--text-main); margin-left: 25px; font-weight: 600; font-size: 0.9rem; transition: 0.3s; }
+        .nav-links a:hover { color: var(--crimson); }
+
+        /* --- HERO SECTION --- */
+        .hero {
+            height: 85vh; background: linear-gradient(rgba(0, 45, 98, 0.85), rgba(0, 45, 98, 0.85)), url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1600&q=80');
+            background-size: cover; background-position: center; display: flex; align-items: center; color: white; padding: 0 8%;
+        }
+        .hero-content { max-width: 800px; }
+        .hero h1 { font-size: 4rem; margin-bottom: 20px; line-height: 1.1; }
+        .hero p { font-size: 1.3rem; opacity: 0.9; margin-bottom: 30px; }
+        .cta-btn { background: var(--crimson); color: white; padding: 18px 40px; text-decoration: none; font-weight: 700; border-radius: 5px; display: inline-block; transition: 0.3s; }
+        .cta-btn:hover { background: var(--gold); transform: translateY(-3px); }
+
+        /* --- STATS BAR --- */
+        .stats { display: flex; justify-content: space-around; padding: 60px 8%; background: var(--soft-white); text-align: center; }
+        .stat-item h2 { color: var(--crimson); font-size: 2.5rem; margin-bottom: 5px; }
+        .stat-item p { font-weight: 700; font-size: 0.8rem; letter-spacing: 1px; color: var(--navy); }
+
+        /* --- TEAM SECTION --- */
+        .section { padding: 100px 8%; }
+        .section-title { text-align: center; margin-bottom: 60px; }
+        .section-title h2 { font-size: 2.8rem; color: var(--navy); }
+        .team-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 40px; }
+        .team-card { text-align: center; background: white; padding: 30px; border-radius: 10px; border: 1px solid #eee; transition: 0.3s; }
+        .team-card:hover { box-shadow: 0 20px 40px rgba(0,0,0,0.1); transform: translateY(-10px); }
+        .team-img { width: 140px; height: 140px; border-radius: 50%; object-fit: cover; margin-bottom: 20px; border: 4px solid var(--soft-white); }
+        .team-card h4 { margin: 10px 0 5px; font-size: 1.4rem; color: var(--navy); }
+        .team-card span { color: var(--crimson); font-weight: 700; font-size: 0.85rem; text-transform: uppercase; }
+
+        /* --- EXPENSE TABLE --- */
+        .table-wrap { overflow-x: auto; margin-top: 40px; }
+        table { width: 100%; border-collapse: collapse; min-width: 600px; }
+        th { background: var(--navy); color: white; padding: 20px; text-align: left; }
+        td { padding: 18px; border-bottom: 1px solid #eee; }
+        tr:nth-child(even) { background: var(--soft-white); }
+
+        /* --- CONTACT --- */
+        .contact-box { background: var(--navy); color: white; padding: 60px; border-radius: 15px; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+        input, textarea { width: 100%; padding: 15px; margin-bottom: 15px; border-radius: 4px; border: none; }
+        
+        footer { padding: 40px 8%; background: #0a0f1a; color: #64748b; text-align: center; }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .contact-box { grid-template-columns: 1fr; padding: 30px; }
+            .stats { flex-direction: column; gap: 30px; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="logo">Anvesha Global</div>
+    <div class="nav-links">
+        <a href="#expertise">Expertise</a>
+        <a href="#team">Our Team</a>
+        <a href="#pricing">Estimates</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Understanding Humanity. <br><span style="color: var(--gold);">Driving Global Growth.</span></h1>
+        <p>Anvesha Global provides the data-driven clarity required for agricultural innovation, rural development, and market dominance.</p>
+        <a href="#contact" class="cta-btn">Request a Consultation</a>
+    </div>
+</section>
+
+<div class="stats">
+    <div class="stat-item"><h2>95+</h2><p>MARKETS ANALYZED</p></div>
+    <div class="stat-item"><h2>500+</h2><p>RESEARCH PROJECTS</p></div>
+    <div class="stat-item"><h2>12M+</h2><p>DATA POINTS COLLECTED</p></div>
+</div>
+
+<section class="section" id="expertise">
+    <div class="section-title">
+        <h2>Core Capabilities</h2>
+        <p>Combining rigorous methodology with local cultural nuance.</p>
+    </div>
+    <div class="team-grid">
+        <div class="team-card">
+            <h3>Agriculture & Rural</h3>
+            <p>Specialized monitoring and evaluation frameworks for sustainable farming and rural livelihoods.</p>
+        </div>
+        <div class="team-card">
+            <h3>Consumer Insights</h3>
+            <p>Predictive modeling to understand the "why" behind purchasing decisions in emerging markets.</p>
+        </div>
+        <div class="team-card">
+            <h3>Leadership & Gender</h3>
+            <p>Proprietary research models focusing on women's leadership and socio-economic empowerment.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="team" style="background: var(--soft-white);">
+    <div class="section-title">
+        <h2>The Leadership Team</h2>
+    </div>
+    <div class="team-grid">
+        <div class="team-card">
+            <img src="https://i.pravatar.cc/150?u=a1" class="team-img" alt="Isha Rakshit">
+            <h4>Isha Rakshit</h4>
+            <span>Managing Partner</span>
+            <p>Specialist in Monitoring & Evaluation and Rural Leadership frameworks.</p>
+        </div>
+        <div class="team-card">
+            <img src="https://i.pravatar.cc/150?u=a2" class="team-img" alt="Dr. Marcus Vane">
+            <h4>Dr. Marcus Vane</h4>
+            <span>Head of Global Research</span>
+            <p>Former lead analyst with 15 years experience in emerging market strategy.</p>
+        </div>
+        <div class="team-card">
+            <img src="https://i.pravatar.cc/150?u=a3" class="team-img" alt="Elena Rodriguez">
+            <h4>Elena Rodriguez</h4>
+            <span>Director of Operations</span>
+            <p>Expert in field survey logistics and quantitative data integrity.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="pricing">
+    <div class="section-title">
+        <h2>Service Modules & Estimates</h2>
+        <p>Illustrative pricing for our foundational research consultancy packages.</p>
+    </div>
+    <div class="table-wrap">
+        <table>
+            <thead>
+                <tr>
+                    <th>Module</th>
+                    <th>Deliverables</th>
+                    <th>Timeline</th>
+                    <th>Est. Expense</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Market Landscape</strong></td>
+                    <td>Competitor Audit + Trend Report</td>
+                    <td>3-4 Weeks</td>
+                    <td>$10,000</td>
+                </tr>
+                <tr>
+                    <td><strong>Impact Assessment</strong></td>
+                    <td>Field Surveys + Stakeholder Interviews</td>
+                    <td>6-8 Weeks</td>
+                    <td>$22,500</td>
+                </tr>
+                <tr>
+                    <td><strong>Custom Data Hub</strong></td>
+                    <td>Live BI Dashboard + Weekly Reporting</td>
+                    <td>Monthly</td>
+                    <td>$4,500/mo</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<section class="section" id="contact">
+    <div class="contact-box">
+        <div>
+            <h2 style="font-size: 2.5rem; margin-top:0;">Partner with Anvesha Global</h2>
+            <p>Ready to unlock deep insights? Our global team is standing by to assist with your next research initiative.</p>
+            <p><strong>Email:</strong> strategy@anveshaglobal.com</p>
+            <p><strong>Locations:</strong> Mumbai | New York | London</p>
+        </div>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Work Email" required>
+            <textarea rows="5" placeholder="Describe your project goals"></textarea>
+            <button type="submit" class="cta-btn" style="border:none; cursor:pointer; width:100%;">Submit Inquiry</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <p class="logo" style="color: white; margin-bottom: 20px;">Anvesha Global</p>
+    <p>&copy; 2026 Anvesha Global Strategic Consultancy. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
